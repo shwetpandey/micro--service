@@ -1,0 +1,16 @@
+server:
+  port: 8701
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/aacc?createDatabaseIfNotExist=true
+    username: root
+    password: Mysql@4811
+    
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:      ddl-auto: update
+  application:    name: contact-service
+    
+eureka:  instance:    hostname: localhost
